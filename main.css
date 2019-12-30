@@ -1,0 +1,97 @@
+
+#heading {
+  font-size: 50px;
+  background-color:lightblue;
+  margin: 0;
+  padding: 0;
+}
+#heading2 {
+  color:black;
+  padding: 15px;
+  margin: 15px;
+}
+#coloring {
+  font-size: 25px;
+  padding:0px;
+  margin:0px;
+}
+#colo1{
+  background-color:lightblue;
+  font-size:25px;
+  padding:0px;
+  margin-left:0px;
+  margin-right:0px;
+}
+#colo2{
+  padding-left: 50px;
+  margin-left:150px;
+  margin-right:250px;
+}
+#coloring1 {
+  font-size: 25px;
+  padding:10px;
+  margin:10px;
+  background-color: lightblue;
+}
+*{
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  padding: 0px;
+ /* Should be removed. Only for demonstration */
+}
+.left {
+  width: 50%;
+  height:100px
+}
+
+.right {
+  width: 50%;
+  height:500px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+/*  * {
+    box-sizing: border-box;
+  }*/
+
+  form.example input[type=text] {
+    padding: 20px;
+    font-size: 25px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+  }
+
+  form.example button {
+    float: left;
+    width: 40%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 25px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  form.example button:hover {
+    background: #0b7dda;
+  }
+
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

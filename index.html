@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>City Probe</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="map.js"></script>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script type = "text/javascript" src = "https://d3js.org/d3.v4.min.js"></script>
+  <style>
+     .line {
+        fill: none;
+        stroke: green;
+        stroke-width: 5px;
+     }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-default" id="heading">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a href="#">
+  <img src="NIT_Durgapur_Logo.png" alt="NIT_Durgapur_Logo" height="75px" width ="75px">
+</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#" id="heading2">SMART CITY DASHBOARD</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav class="navbar navbar-default" id="coloring">
+    <div class="container-fluid">
+  <!--    <div class="navbar-header">
+        <a class="navbar-brand" href="#">WebSiteName</a>
+      </div>  -->
+      <ul class="nav navbar-nav">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT US</a></li>
+        <li><a href="#">COLLABORATOR</a></li>
+        <li><a href="#">PRODUCT</a></li>
+        <li><a href="#">DATA SET</a></li>
+        <li><a href="#">SMART CITY TRANSPORATION</a></li>
+        <li><a href="#">BENEFICIARIES</a></li>
+        <li><a href="#">BUSINESS LOGIC</a></li>
+        <li><a href="#">HELP</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="row">
+  <div class="column left">
+    <div id="googleMap" style="width:100%;height:400px"></div>
+    </div>
+  <div class="column right"  >
+  <!--  <div style="width:100%;height:400px"> -->
+    <nav class="navbar navbar-default" id="colo1">
+      <div class="container-fluid" >
+    <!--    <div class="navbar-header">
+          <a class="navbar-brand" href="#">WebSiteName</a>
+        </div>  -->
+        <ul class="nav navbar-nav" id="colo2" >
+          <li><a href="#">LOCATION</a></li>
+          <li><a href="#">DATE</a></li>
+          <li><a href="#">UNIQUE CODE</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div>
+    <form class="example" action="#/action_page.php" style="margin:auto;max-width:400px">
+      <input type="text" placeholder="Search.." name="search2" style="padding: 20px;  font-size: 15px;">
+      <button type="submit" style="padding: 15px;""><i class="fa fa-search"></i></button>
+    </form>
+    </div>
+    <div>
+      <ul>
+        <li style="float:left;padding:10px ;margin-left:20px;margin-right:20px; font-size:20px;">POLLUTION</li>
+        <li style="float:left;padding:10px; margin-left:20px;margin-right:20px; font-size:20px;">SPEED BREAKER</li>
+        <li style="float:left;padding:10px ;margin-left:20px;margin-right:20px; font-size:20px;">BROKEN PATH</li>
+        <li style="float:left;padding:10px ;margin-left:20px;margin-right:20px; font-size:20px;">POTHOLE</li>
+        <li style="float:left;padding:10px ;margin-left:20px;margin-right:20px;font-size:20px;">DUST</li>
+      </ul>
+    </div>
+    <div>
+    <img src="imgnum.png" style="width:100%; height:210px">
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-default" id="coloring1">
+  <div class="container-fluid">
+<!--    <div class="navbar-header">
+      <a class="navbar-brand" href="#">WebSiteName</a>
+    </div>  -->
+    <ul class="nav navbar-nav">
+      <li><a href="#">BUMPY ROAD</a></li>
+      <li><a href="#">POTHOLE ROAD</a></li>
+      <li><a href="#">CO2 ON ROAD</a></li>
+      <li><a href="#">NO2 AND CO ON ROAD</a></li>
+      <li><a href="#">PM 2.5</a></li>
+      <li><a href="#">PM 10</a></li>
+      <li><a href="#">BROKEN PATCH</a></li>
+      <li><a href="#">DUSTY ROAD</a></li>
+      <li><a href="#">NO LIGHT</a></li>
+    </ul>
+  </div>
+</nav>
+<div>
+  <h1 style="text-align:center;">REAL TIME GRAPH</h1>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row">
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+  <div class="col-sm-4"><script type = "text/javascript" src = "co.js"></script></div>
+</div>
+</div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCswoy_oCVKf0EmmMsNn1HN4WKK6gtEKF0&callback=myMap"></script>
+</body>
+</html>
